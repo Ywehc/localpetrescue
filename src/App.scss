@@ -1,0 +1,58 @@
+/* #668E59	- green medium
+#D1613F	 - rust red
+#A2B484	 - green light
+#3E8E94	 - teal
+#FFFFFF	 - white
+*/
+
+$white: #FFFFFF;
+$teal: #3E8E94;
+$lightgreen: #A2B484;
+$rust: #D1613F;
+$mediumgreen: #668E59;
+
+@import url('https://fonts.googleapis.com/css?family=Marcellus');
+
+body {
+  background: $white;
+}
+
+header {
+  color: $teal;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+
+}
+
+.title {
+  width:70%;
+}
+.title h1 {
+  font-size: 250%;
+  margin: 10px 0;
+}
+.title p {
+  font-size: 120%;
+  margin: 5px 0;
+}
+.logo {
+  width: 30%;
+  padding: 15px;
+}
+.logo img {
+  width: 100px;
+  border-radius: 50%;
+  margin:auto;
+  border: 4px solid $lightgreen;
+}
+.highlight {
+  color: $rust;
+}
+.subheader-bestfriend {
+  color: $lightgreen;
+}
+.subheader-home {
+  color: $mediumgreen;
+}
+
