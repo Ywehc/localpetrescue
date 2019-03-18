@@ -13,11 +13,15 @@ $mediumgreen: #668E59;
     font-size: 90%;
 }
 .main {
-    background-image: url("https://lh3.googleusercontent.com/QK_ZBSRS9Bz4zdiS7vJQydTP_p7ieaQZEGtUKVM_bliL2eSfQL7ZdstdokNfIsWTXqwxLf1XM01tOMCpsj9uJ62WwVkgE3EHRm-w7I8D37Q5lpwYas0O-HH41Tbo7Y4WgzNLi_F2N88jWqoEPqtYS0Z3LedH25MogIvuUIrj47l_bOHiF8N9cOHxDWrSU0i83YyQJu9GW2qbk9fHBe-rbv3E5dPZHAKrLI1QZUUsL9OW8n6qIVFMCMsi280EMeI9ZGUdi5Qiy2BbwNMLWy7ZLJQ8PLty0o_MJUWgG9jMQ-ALWO6kBb0Np5C7qEAaRqpovRlBWYfxrFwZb7HM_Hz461uphOrHUm_xCefuIJ1kBiSnUoUucFMFxv3El90y4mO9_4jRxjZKZXMdDhr7QtmHAZhyFY4puJhHbAsjirgv4_BNmOfuJfHvhz63BGqY-kFOadKcdhke5DUzTnZJYF8qLoadtZ9Xh_3awouAmoQGkeRtBB22ATa8YLFwS88FluEFBLwaxeRMO1LD2CSihh-_ejjl9FNacOvbwjCzQ0U5oWV1K_O-YXZMuTmozS5ytIN13pQLdGSDrztuvgFEkf_kdZYZRY5ROBK2DfQSxjggwtdZhuaFZSr7wLvhPoHRkC0g8pgRUi3UjOVk79yn0nTqymy2C7xqjTw=w559-h843-no");
-    height: 400px;
+    background-image: url("https://lh3.googleusercontent.com/Qdxx-XW25xW-y5La7oc89hWX_tiLb-iaNxGyaJ6bUmN-oS-VgfUHAR-DmtQT-hQvql263W4NOO41m7SHVAOB_JNRv0m31NK-vS3K1KUBLAI4VPBsPpuJZrr82ILxmUwe3eH3HW7boTJPfM520IHSKAYX7s_jHFIW4SWCo3F9B0ZmiP3wzPEZnuAPwiB6zaNcefRBn-WasT2jExzWwK47hHBevvRLrUYB4yrG4XQJQ3qa46aVOOzZLdl1M6s12eJ0RkYv-8ehHxdLaFhEns5Z1AG9QbYjqO9WBLmuYzfcxlxDPDogLrHisE7nLwOE5_odczLeotkc_89lsB4KB9bcNub_imejw3aoc4kDPIEMWf7QM3kBlvQfSxgzX7IeTcGmEffwxMMUr0MCudh3WYCmxTrr190b38LbCsrbM13q3IC473xawDOt6ng3inyfEYjlWdrCOe23eJhM_IQEcYWvcP67EqWrXHViujLkqG_UFS8hEFgQzNlVDK1xgSBCyokfIqNc0mThOu75SZBrqRPaEGnT8XAd9yFQUqUVTEXeVj1aEeoycQ2rlX-EZf-h7lawHT1UHoQQmTBVDLwkDXNB2O89XeeAtBoh6pOPUse2UetyiDYxA9ohIsfLhkCkjBOPVps8RA3iPtGG2-SoY-NbkkV1XgklZ5Q=w599-h903-no");
     background-size: cover;
     padding: 10px;
     font-family: 'Marcellus', serif;
+    max-width: 400px;
+    min-height: 300px;
+}
+.logo {
+    text-align: right;
 }
 h2 {
     margin: 10px;
@@ -45,13 +49,33 @@ input::placeholder {
     border: 4px solid $lightgreen;
     border-radius: 5%;
     padding: 5px;
+    width: 50%;
+    height: 30px;
 }
 .submitButton {
     margin: 10px;
-    background: $lightgreen;
+    background: $teal;
     color: $white;
     font-size: 100%;
     padding: 5px;
     border-radius: 5%;
-    border: 4px solid $mediumgreen;
+    border: 4px solid $lightgreen;
+    width: 50%;
 }
+@media screen and (min-width: 442px) {
+    .main {
+        background-position-y: -80px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}  
+
+@media screen and (min-width: 900px) {
+    .main {
+       background-image: url("https://images.unsplash.com/photo-1488643673641-1527a227662e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2066&q=80");
+       max-width: none;
+       background-position-y: none;
+       max-width: 800px;
+       background-position: 100%;
+    }
+} 

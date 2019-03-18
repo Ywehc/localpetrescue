@@ -30,13 +30,13 @@ class MainInput extends Component {
                         type="text" 
                         value={this.state.value} 
                         onChange={this.handleChange} 
-                        placeholder="Postal/Zip Code"/>
+                        placeholder="Enter your Postal/Zip Code"/>
                 </label>
                 <br></br>
                 <input 
                     className="submitButton"
                     type="submit" 
-                    value="Show me dogs!" />
+                    value="View dogs near me!" />
             </form>
 
         )
