@@ -21,7 +21,7 @@ class Results extends Component {
                 Authorization: API_KEY,
                 'Content-Type': 'application/json'}
         })
-        .then(response => response.json())
+        .then((response) => response.json())
         .then(response => this.setState({animals: response.data}))
     }
     
