@@ -2,6 +2,10 @@
   "name": "petrescue",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "npm": "6.4.1",
+    "node": "10.14.1"
+  },
   "dependencies": {
     "express": "^4.16.4",
     "node-sass": "^4.11.0",
@@ -11,7 +15,7 @@
     "react-scripts": "2.1.8"
   },
   "scripts": {
-    "start": "server",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
